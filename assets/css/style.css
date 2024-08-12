@@ -1,0 +1,395 @@
+/*======== GOOGLE FONTS =======*/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========== Colors ==========*/
+    --white-color: #FFFFFF;
+    --blue-color: #2C9CF0;
+    --blue-dark-color: #04092C;
+    --grey-color: #667080;  
+    --black-color: #000000;
+
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --header-font: "Figtree", sans-serif;
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: .855rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+    :root {
+        --big-font-size: 5rem;
+        --h1-font-size: 2rem;
+        --h2-font-size: 2.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 1.25rem;
+        --small-font-size: 1rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font) !important;
+    font-size: var(--small-font-size) !important;
+    background-color: var(--white-color) !important;
+    color: var(--blue-color);
+    line-height: 1.5 !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font) !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+    padding: 3.5rem 0 2rem;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+}
+
+.section-subtitle {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+}
+
+.text {
+    font-size: var(--small-font-size);
+}
+
+.small-text {
+    font-size: var(--smaller-font-size);
+}
+
+.button {
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 8px 25px;
+    border-radius: 20px;
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+.button:hover {
+    color: var(--white-color);
+    background-color: var(--blue-dark-color);
+    border: 1px solid var(--white-color);
+}
+
+.button-outline {
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: 1px solid var(--white-color);
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+.button-outline:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
+.button-outline-blue {
+    color: var(--blue-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: 1px solid var(--blue-color);
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+.button-outline-blue:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
+.button-white {
+    color: var(--blue-dark-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 8px 30px;
+    border-radius: 20px;
+    background-color: var(--white-color);
+    border: 1px solid var(--white-color);
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+.button-white:hover {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
+.main {
+    overflow: hidden; /* For the animations ScrollReveal*/
+}
+
+/* --=== Header and Nav === */
+.header {
+    color: var(--white-color) !important;
+    background-color: var(--blue-dark-color) !important;
+    z-index: var(--z-fixed);
+}
+
+.navbar {
+    padding: 20px 0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    background-color: var(--blue-dark-color) !important;
+    z-index: var(--z-fixed);
+}
+
+.navbar-toggler i {
+    color: var(--white-color);
+    font-size: 1.55rem;
+}
+
+.navbar-brand img{
+    width: 140px;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    background-color: var(--blue-dark-color) !important;
+}
+
+.nav-link {
+    color: var(--white-color) !important;
+    font-size: var(--small-font-size) !important;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: var(--blue-color) !important;
+}
+
+.nav-link:focus {
+    color: var(--blue-color) !important;
+    text-decoration: underline !important;
+}
+
+/* Change background header */
+.scroll-header {
+    box-shadow: 0 0 10px #04092C !important;
+}
+
+/*===== Home =====*/
+.home {
+    padding: 7.5rem 0 2rem;
+}
+
+.home-container {
+    height: 200px;
+    border-radius: 16px;
+    background-image: url(../img/home-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title {
+    color: var(--white-color);
+    font-size: var(--big-font-size);
+    font-weight: 100 !important;
+    max-width: 300px;
+}
+
+/*===== Category =====*/
+.category-d {
+    border-bottom: .5px solid var(--grey-color);
+    padding-bottom: 8px;
+}
+
+.category-box {
+    position: relative;
+}
+
+.category-box img {
+    border-radius: 15px;
+}
+
+.category-box a {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    color: var(--white-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    padding: 10px 55px;
+    border-radius: 20px;
+    background-color: var(--blue-dark-color);
+    border: 3px solid var(--white-color);
+    transition: background-color .4s, color .4s, border .4s;
+}
+
+.category-box a:hover {
+    color: var(--blue-dark-color);
+    background-color: var(--white-color);
+    border: 3px solid var(--blue-dark-color);
+}
+
+/*===== Picks =====*/
+.picks-d {
+    border-bottom: .5px solid var(--grey-color);
+    padding-bottom: 8px;
+}
+
+.picks-button {
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--blue-dark-color);
+    cursor: pointer;
+}
+
+.picks-button i {
+    color: var(--blue-color);
+    font-size: var(--h2-font-size) !important;
+    font-weight: var(--font-bold);
+}
+
+.event-img img{
+    border-radius: 20px;
+}
+
+.date, 
+.time {
+    color: var(--grey-color);
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0;
+}
+
+.event,
+.location {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+} 
+
+/*===== Footer =====*/
+.footer {
+    padding: 5rem 0 4.5rem;
+    background-color: var(--blue-dark-color);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.footer-link {
+    color: var(--white-color);
+}
+
+.footer-link:hover {
+    color: var(--blue-color);
+}
+
+.footer-link:focus {
+    color: var(--blue-color);
+    text-decoration: underline;
+}
+
+.footer-text {
+    color: var(--white-color);
+}
+
+i {
+    color: var(--white-color);
+}
+
+.f-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.copy-section {
+    padding: 1rem 0;
+    background-color: var(--blue-color);
+}
+
+.copy-text {
+    color: var(--white-color);
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 575.98px) {
+    .event-img img{
+        width: auto;
+        height: auto;
+    }    
+}
+
+@media (min-width: 768px) {
+    .event-img img{
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home-container {
+        padding: 0 30px !important;
+        height: 400px;
+    }
+
+    .home-title {
+        max-width: 700px;
+    }
+    
+}

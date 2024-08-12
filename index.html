@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==== Title ====-->
+    <title>Metaticket</title>
+    <!--==== Css ====-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--==== Bootstrap Css ====-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--==== Remix Icon ====-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--==== Swiper Css ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!--=== Header ===-->
+    <header id="header" class="header">
+        <!--=== Navbar ===-->
+        <nav id="navbar" class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mt-5 mt-lg-0 mb-3 mb-lg-0 align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-center" href="#">Trending</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-center" href="#">Sports</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-center" href="#">Concerts</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-center" href="#">Theater & Comedy</a>
+                        </li>
+                        
+                        <li class="nav-link nav-item mt-3 mt-lg-0 mb-1 mb-lg-0">
+                            <a class="button" href="#">
+                                Sign Up
+                            </a>
+                        </li>
+
+                        <li class="nav-link nav-item mt-4 mt-lg-0">
+                            <a class="button-outline" href="#">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==== Main ====-->
+    <main class="main">
+        <!--==== Home ====-->
+        <section class="home section">
+            <div class="home-container container">
+                <div class="row align-items-center h-100">
+                    <div class="col-12 col-lg-7">
+                        <h1 class="home-title mb-4 mb-lg-5">
+                            Get your music fix with festival !!
+                        </h1>
+                        <a href="#" class="button-white ">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--==== Category ====-->
+        <section class="category section">
+            <div class="container">
+                <div class="category-d d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">
+                        Browse By Category
+                    </h2>
+
+                    <a href="#" class="button">See More</a>
+                </div>
+
+                <div class="row justify-content-center align-items-center text-center mt-1 g-5">
+                    <div class="category-box col-12 col-md-6 col-lg-3">
+                        <img src="assets/img/category-1.jpg" alt="">
+                        <a href="#" class="button">Concerts</a>
+                    </div>
+                    <div class="category-box col-12 col-md-6 col-lg-3">
+                        <img src="assets/img/category-2.jpg" alt="">
+                        <a href="#" class="button">Sports</a>
+                    </div>
+                    <div class="category-box col-12 col-md-6 col-lg-3">
+                        <img src="assets/img/category-3.jpg" alt="">
+                        <a href="#" class="button">Theater</a>
+                    </div>
+                    <div class="category-box col-12 col-md-6 col-lg-3">
+                        <img src="assets/img/category-4.jpg" alt="">
+                        <a href="#" class="button">Family</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==== Picks ====-->
+        <section class="section">
+            <div class="container">
+                <div class="picks-d d-flex align-items-center justify-content-between mb-5">
+                    <h2 class="section-title">
+                        Top Picks Near You
+                    </h2>
+
+                    <a href="#" class="picks-button">
+                        <i class="ri-filter-2-line"></i>
+                        Filter
+                    </a>
+                </div>
+
+                <div class="event-container d-flex flex-column flex-md-row flex-lg-row align-items-md-center justify-content-between gap-3 mt-2 mb-4">
+                    <div class="d-flex gap-2 gap-md-4 gap-lg-4 flex-column flex-md-row flex-lg-row align-items-md-center">
+                        <div class="event-img">
+                            <img src="assets/img/event-1.jpg" alt="">
+                        </div>
+
+                        <div class="event-details">
+                            <p class="date">Aug 13</p>
+                            <p class="time">Sun • 10:00am</p>
+                            <h5 class="event">Elements Music and Arts Festival - Sunday</h5>
+                            <h5 class="location">Pocono Raceway</h5>
+                        </div>
+                    </div>
+
+                    <div class="event-button d-flex flex-md-column gap-2">
+                        <a href="#" class="button-outline-blue">View Details</a>
+                        <a href="#" class="button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="event-container d-flex flex-column flex-md-row flex-lg-row align-items-md-center justify-content-between gap-3 mb-4">
+                    <div class="d-flex gap-2 gap-md-4 gap-lg-4 flex-column flex-md-row flex-lg-row align-items-md-center">
+                        <div class="event-img">
+                            <img src="assets/img/event-2.jpg" alt="">
+                        </div>
+
+                        <div class="event-details">
+                            <p class="date">Aug 13</p>
+                            <p class="time">Sun • 10:00am</p>
+                            <h5 class="event">Orange County Fair - Admission</h5>
+                            <h5 class="location">Orange County Fair and Event Center</h5>
+                        </div>
+                    </div>
+
+                    <div class="event-button d-flex flex-md-column gap-2">
+                        <a href="#" class="button-outline-blue">View Details</a>
+                        <a href="#" class="button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="event-container d-flex flex-column flex-md-row flex-lg-row align-items-md-center justify-content-between gap-3 mb-4">
+                    <div class="d-flex gap-2 gap-md-4 gap-lg-4 flex-column flex-md-row flex-lg-row align-items-md-center">
+                        <div class="event-img">
+                            <img src="assets/img/event-3.jpg" alt="">
+                        </div>
+
+                        <div class="event-details">
+                            <p class="date">Aug 13</p>
+                            <p class="time">Sun • 10:00am</p>
+                            <h5 class="event">Audien (21+ Event)</h5>
+                            <h5 class="location">AYU Dayclub</h5>
+                        </div>
+                    </div>
+
+                    <div class="event-button d-flex flex-md-column gap-2">
+                        <a href="#" class="button-outline-blue">View Details</a>
+                        <a href="#" class="button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="event-container d-flex flex-column flex-md-row flex-lg-row align-items-md-center justify-content-between gap-3 mb-4">
+                    <div class="d-flex gap-2 gap-md-4 gap-lg-4 flex-column flex-md-row flex-lg-row align-items-md-center">
+                        <div class="event-img">
+                            <img src="assets/img/event-5.jpg" alt="">
+                        </div>
+
+                        <div class="event-details">
+                            <p class="date">Aug 13</p>
+                            <p class="time">Sun • 10:00am</p>
+                            <h5 class="event">Elements Music and Arts Festival - Sunday</h5>
+                            <h5 class="location">Pocono Raceway</h5>
+                        </div>
+                    </div>
+
+                    <div class="event-button d-flex flex-md-column gap-2">
+                        <a href="#" class="button-outline-blue">View Details</a>
+                        <a href="#" class="button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="#" class="button-outline-blue">See More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-3 g-md-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img src="assets/img/footer-logo.png" alt="footer logo">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <ul class="footer-links p-0">
+                            <li class="">
+                                <a href="#" class="small-text footer-link">Home</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="small-text footer-link">About Us</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="small-text footer-link">Blog</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="small-text footer-link">Trending Events</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="small-text footer-link">Categories</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="">
+                        <div class="f-flex">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="ri-mail-line"></i>
+                                <p class="small-text footer-text mb-0">Email</p>
+                            </div>
+                            <p class="small-text footer-text align-self-end">sparessupport@metaticket.in</p>
+                        </div>
+                        <div class="f-flex">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="ri-phone-line"></i>
+                                <p class="small-text footer-text mb-0">Phone</p>
+                            </div>
+                            <p class="small-text footer-text align-self-end">8884518856</p>
+                        </div>
+                        <div class="f-flex">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="ri-calendar-event-fill"></i>
+                                <p class="small-text footer-text mb-0">Working Days</p>
+                            </div>
+                            <p class="small-text footer-text align-self-end">Monday - Sunday</p>
+                        </div>
+                        <div class="f-flex">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="ri-time-line"></i>
+                                <p class="small-text footer-text mb-0">Working Hours</p>
+                            </div>
+                            <p class="small-text footer-text align-self-end">8:00AM - 8:00PM (IST)</p>
+                        </div>
+                        <div class="f-flex">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="ri-map-pin-line"></i>
+                                <p class="small-text footer-text mb-0">Address</p>
+                            </div>
+                            <p class="small-text footer-text align-self-end">1717 Harrison St, San Francisco, CA 94103, INDIA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copy-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copy-text small-text text-center">© 2023 MetaTicket Private Limited</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--==== Swiper JS ====-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--==== JS ====-->
+    <script src="assets/js/main.js"></script>
+    <!--==== BOOTSTRAP JS ====-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
