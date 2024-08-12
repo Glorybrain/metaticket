@@ -230,6 +230,7 @@ img {
 }
 
 .home-container {
+    padding: 0 0 1rem;
     height: 200px;
     border-radius: 16px;
     background-image: url(../img/home-img.jpg);
